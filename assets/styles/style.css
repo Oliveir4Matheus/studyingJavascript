@@ -1,0 +1,17 @@
+* {
+    margin:0 auto;
+}
+body {
+    background: linear-gradient(90deg,rgb(70, 28, 110),rgb(0, 155, 245));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width:500px;
+    height: 35%;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    box-shadow: 10px 15px 40px black;
+}

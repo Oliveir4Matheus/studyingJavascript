@@ -1,3 +1,4 @@
+// [ MAP ]
 // Map é uma estrutura de dados que pode iterar seus elementos na ordem de inserção
 // ele também apaga da memória seus elementos quando eles não estão sendo usados.
 // Serve para quando precisamos ter um array ou objeto com dados na ordem de inserção.
@@ -51,4 +52,6 @@ const obj3 = {
         "name":"valor"
     }
 }
-console.log(obj3)
+// WEAK MAP
+// O weakMap aceita apenas objetos ou funções como chaves.
+// Ele não é iterávél.
