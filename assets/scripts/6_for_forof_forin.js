@@ -58,3 +58,12 @@ for(let key in pessoas){
         console.log(nome[1])
     }
 }  
+
+// O for in sempre pega o indice do array ou do objeto
+// O for of sempre retorna o valor de cada indice de um array.
+
+obj = [1,2,3]
+
+for (const index of obj){
+    console.log(index)
+}
