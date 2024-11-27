@@ -9,13 +9,16 @@ Fetch → recebe uma url como parâmetro.
 
 async function searchCep (cepn){
     try {
-        let cep = await fetch(`https://viacep.com.br/ws/${cepn}/json/`)
-        result = await cep
-        console.log(result.json())
+        let cep = await fetch(`https://viacep.com.br/ws/${cepn}sad/json/`)
+        if(!cep.ok){
+            throw new Error("Rota invalida")
+        }
+        data = await cep.json()
+        console.log(data)
     }
     catch (e){
-        console.log("Ocorreu um erro inesperado  :"+e)
+        console.log("Ocorreu o seguinte erro  :"+e)
     }
 
 }
-searchCep("0100asd1000")
+searchCep("01001000")
